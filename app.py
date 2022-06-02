@@ -47,5 +47,5 @@ if data_file is not None:
 
     filter=chrome2.loc[(chrome2.senti_polar>0) & (chrome2.Star<3)]
     new = test['ID'].isin(filter['ID'])
-    #st.write(test[new])
-    st.write("success")
+    st.write(test[new])
+    
