@@ -47,5 +47,9 @@ if data_file is not None:
 
     filter=chrome2.loc[(chrome2.senti_polar>0) & (chrome2.Star<3)]
     new = test['ID'].isin(filter['ID'])
+    st.write("Success:Semantics of review text that does not match rating")
     st.write(test[new])
+  
+else:
+    st.write("Upload a correct File")
     
